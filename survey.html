@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title> 
+        <link rel="stylesheet" href="survey.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+                body{
+                background-color: orange;
+                text-align: center;
+                }
+        </style>
+    </head>
+ <body>
+    <h1 id="title">Survey Form</h1>
+
+    <div id="survey-box">
+        <p id="description">Some Description About Form</p>
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            <div class="row">
+                <div class="col-sm-6" ><label id="name-label">* Name:</label></div>
+                <div class="col-sm-6" ><input autofocus type="text" name="name" placeholder="Enter your name" required id="name" class="input-field"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6" ><label id="email-label">* E-Mail:</label></div>
+                <div class="col-sm-6" ><input autofocus type="email" name="email" placeholder="Enter your e-mail" id="email" class="input-field" required></div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6" ><label id="number-label">* Age:</label></div>
+                <div class="col-sm-6" ><input autofocus type="number" name="age" placeholder="Enter your age" min="1" max="100" class="input-field" id="number" required></div>
+            </div>
+
+        <div class="row">
+            <div class="col-sm-6" ><label>Which one is your current position?</label></div>
+            <div class="col-sm-6"  id="dropdown">
+                <select class="dropdown">
+                    <option disabled value>select an option</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="job">Part Time Job</option>
+                    <option value="job">Hobo</option>
+                    <option value="hobby">Hobyist</option>
+                    <option value="other">Other</option>
+                    <option value="idontwanttosay">I don't want to say</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" ><label>Which one do you prefer for learning code?</label></div>
+            <div class="col-sm-6"  id="radio-buttons">
+
+                <form>
+                    <input type="radio" name="radio-buttons" value="Internet" checked> Internet<br>
+                    <input type="radio" name="radio-buttons" value="Books"> Books<br>
+                    <input type="radio" name="radio-buttons" value="Bootcamp"> Bootcamp<br>
+                    <input type="radio" name="radio-buttons" value="College"> College
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" ><label>* Which language do you prefer? </label></div>
+            <div class="col-sm-6"  id="checkboxes">
+             <!--
+                <ul id="preferences" >
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">JavaScript</label></li><br>
+                    <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Pyton</label></li><br>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">C++</label></li><br>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Ruby</label></li><br>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Java</label></li><br>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">PHP</label></li>
+                </ul>
+             -->   
+             <!---->
+                <form >
+                    <input type="checkbox" id="checkboxes" value="" > JavaScript<br>
+                    <input type="checkbox" id="checkboxes" value=""> Pyton<br>
+                    <input type="checkbox" id="checkboxes" value=""> C + +<br>
+                    <input type="checkbox" id="checkboxes" value=""> Ruby<br>
+                    <input type="checkbox" id="checkboxes" value=""> Java
+                </form>
+             
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" ><label>Comments:</label></div>
+            <div class="col-sm-6" >               
+                <textarea id="textarea" class="input-field" name="comment" rows="3"  placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div>
+            <form id="form" class="inline-form" action="https://www.freecodecamp.com/email-submit">
+                <input id="submit" type="submit"  class="btn" action="https://www.freecodecamp.com/email-submit"></input>
+            </form>
+        </div>
+        </form>
+    </div>
+ </body>
+
+
+<!--       <form id="form" class="inline-form" action="https://www.freecodecamp.com/email-submit">  -->
+
+</html>

@@ -1,0 +1,70 @@
+  #survey-box{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.4em;
+  }
+  p{
+    padding: 20px;
+    font-size:1.4em;
+  }
+  
+  .right{
+  float: left;
+  }
+  .row{
+    padding: 10px;
+  }
+  .input-field{
+    width: 50%;
+    float: left;
+  }
+  label{
+    float: right;
+  }
+  .dropdown{
+    float:left;
+  }
+  #radio-buttons{
+    display: block;
+    position: relative;
+    text-align:left;
+    float: left;
+  }
+  /*#checkboxes*/
+ 
+  #checkboxes{
+    display:block;
+    position:relative;
+    float:left;
+    text-align:left;
+  }
+  #submit{
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 30%;
+    background-color: orangeRed;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5em;
+  }
+  
+  @media screen and (max-width: 775px) {
+    label {
+      width: 100%;
+      text-align: left;
+    }
+    .input-field {
+      width: 80%;
+      float: left;
+    }
+    
+    #submit{
+      width: 25%;
+      font-size: 0.7em;
+    }
+    
+  }
